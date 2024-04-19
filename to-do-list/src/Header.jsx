@@ -49,6 +49,7 @@ function Header() {
 
         <button type="submit">add</button>
       </form>
+      <p>{taskName}</p>
     </header>
   )
 }
