@@ -1,11 +1,11 @@
 import React from 'react'
 import {formatDate} from './Utils/date-helper.js'
 
-function Task({children, date}) {
+function Task({children, date, id}) {
   return (
     <div>
-      <input type='checkbox' />
-      <label>{children}</label>
+      <input id={id} type='checkbox' />
+      <label htmlFor={id}>{children}</label>
       {' '}
       <span>{formatDate(date)}</span>
       <button>Borrar</button>
