@@ -10,7 +10,7 @@ function Header({taskName, setTaskName, tasks, setTasks}) {
     const nextTasks = [...tasks];
     const form = new FormData(e.target);
     const taskStatus = form.get("task-status");
-    const taskName = form.get("task-name")
+    const taskName = form.get("task-name");
     
     const newTask = {
       id: Math.random(),
